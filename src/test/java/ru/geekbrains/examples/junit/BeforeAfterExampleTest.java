@@ -1,7 +1,8 @@
-package ru.geekbrains.main.site.at.junit;
+package ru.geekbrains.examples.junit;
 
 import org.junit.jupiter.api.*;
 
+@Disabled
 public class BeforeAfterExampleTest extends BaseExampleTest {
 
     @BeforeAll
@@ -12,7 +13,6 @@ public class BeforeAfterExampleTest extends BaseExampleTest {
     @BeforeEach
     void setUp1() {
         System.out.println("Child class before each");
-
     }
 
     @Test
@@ -28,7 +28,6 @@ public class BeforeAfterExampleTest extends BaseExampleTest {
     @AfterEach
     void tearDown1() {
         System.out.println("Child class after each");
-
     }
 
     @AfterAll

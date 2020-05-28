@@ -1,18 +1,17 @@
 package ru.geekbrains.main.site.at;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ru.geekbrains.main.site.at.base.BaseTest;
 
-@Disabled
 public class SearchTest extends BaseTest {
 
     @Test
-    void searchJavaTest() {
+    public void searchJavaTest() {
         // Открываем страницу с курсами
         driver.get(BASE_URL + "/courses");
         // Закрываем баннер

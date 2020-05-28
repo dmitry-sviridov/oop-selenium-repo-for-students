@@ -1,5 +1,6 @@
-package ru.geekbrains.main.site.at;
+package ru.geekbrains.main.site.at.base;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
@@ -9,12 +10,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
 
 public abstract class BaseTest {
-    protected WebDriver driver;
     protected final String BASE_URL = "https://geekbrains.ru";
+    protected WebDriver driver;
 
     @BeforeEach
-    void setUp() {
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+    public void setUp() {
+        WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
@@ -24,7 +25,7 @@ public abstract class BaseTest {
     }
 
     @AfterEach
-    void tearDown() {
+    public void tearDown() {
         driver.quit();
     }
 }
