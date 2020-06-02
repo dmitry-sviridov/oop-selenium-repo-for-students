@@ -1,10 +1,13 @@
 package ru.geekbrains.main.site.at.pages;
 
+import io.qameta.allure.Feature;
+import io.qameta.allure.Step;
 import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+@Feature("Navigation")
 public class NavigationTab extends BasePage {
 
     @FindBy(css = "nav > a[href='/career']")
@@ -29,6 +32,7 @@ public class NavigationTab extends BasePage {
         super(driver);
     }
 
+    @Step("Click on {buttonTitle} button")
     public Page clickButton(String buttonTitle) {
         switch (buttonTitle) {
             case "Карьера": {

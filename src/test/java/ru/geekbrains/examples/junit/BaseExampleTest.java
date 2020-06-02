@@ -2,7 +2,6 @@ package ru.geekbrains.examples.junit;
 
 import org.junit.jupiter.api.*;
 
-@Disabled
 public class BaseExampleTest {
 
     @BeforeAll
