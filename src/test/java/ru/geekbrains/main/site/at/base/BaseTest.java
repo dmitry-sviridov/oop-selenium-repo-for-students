@@ -10,7 +10,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
 
 public abstract class BaseTest {
-    protected final String BASE_URL = "https://geekbrains.ru";
     protected WebDriver driver;
 
     @BeforeEach

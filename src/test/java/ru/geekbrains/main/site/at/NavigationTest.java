@@ -1,37 +1,32 @@
 package ru.geekbrains.main.site.at;
 
-import io.qameta.allure.Step;
-import org.junit.jupiter.api.BeforeEach;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import ru.geekbrains.main.site.at.base.BaseTest;
-import ru.geekbrains.main.site.at.pages.NavigationTab;
+import ru.geekbrains.main.site.at.pages.page.content.TestsPage;
+import ru.geekbrains.main.site.at.pages.view.LeftNavigation;
 
-import java.util.stream.Stream;
-
-@Execution(value = ExecutionMode.CONCURRENT)
+@Execution(ExecutionMode.CONCURRENT)
+@DisplayName("Проверка навигации")
+@Feature("Проверка навигации")
 public class NavigationTest extends BaseTest {
 
-    public static Stream<String> pageGenerator() {
-        return Stream.of("Карьера", "Тесты", "Блог", "Форум", "Вебинары", "Курсы");
+    static LeftNavigation.Button[] stringProvider() {
+        return LeftNavigation.Button.values();
     }
 
-    @BeforeEach
-    @Step("Open '/career' page")
-    public void openSite() {
-        driver.get(BASE_URL + "/career");
-    }
-
-    @ParameterizedTest
-    @DisplayName("check navigation items")
-    @MethodSource("pageGenerator")
-    public void navigationPanelTest(String buttonTitle) {
-        new NavigationTab(driver)
-                .clickButton(buttonTitle)
-                .checkHeader(buttonTitle);
+    @DisplayName("Нажатие в навигации")
+    @ParameterizedTest(name = "{index} => переход на страницу {0}")
+    @MethodSource("stringProvider")
+    void checkNavigation(LeftNavigation.Button button) {
+        new TestsPage(driver)
+                .openUrl()
+                .getLeftNavigation().clickButton(button)
+                .getHeader().checkNamePage(button.getName());
     }
 
 }
