@@ -7,8 +7,8 @@ import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import ru.geekbrains.main.site.at.base.BaseTest;
-import ru.geekbrains.main.site.at.pages.page.content.TestsPage;
-import ru.geekbrains.main.site.at.pages.view.LeftNavigation;
+import ru.geekbrains.main.site.at.page.content.TestsPage;
+import ru.geekbrains.main.site.at.view.LeftNavigation;
 
 @Execution(ExecutionMode.CONCURRENT)
 @DisplayName("Проверка навигации")

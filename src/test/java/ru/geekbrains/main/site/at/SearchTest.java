@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 import ru.geekbrains.main.site.at.base.BaseTest;
-import ru.geekbrains.main.site.at.pages.page.content.TestsPage;
+import ru.geekbrains.main.site.at.page.content.TestsPage;
 
 import static org.hamcrest.Matchers.*;
-import static ru.geekbrains.main.site.at.pages.view.SearchTabsView.Tab.*;
+import static ru.geekbrains.main.site.at.view.SearchTabsView.Tab.*;
 
 @Execution(ExecutionMode.CONCURRENT)
 @DisplayName("Проверка работы Поиска")

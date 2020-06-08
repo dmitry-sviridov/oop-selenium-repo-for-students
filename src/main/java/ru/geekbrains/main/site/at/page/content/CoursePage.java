@@ -1,8 +1,8 @@
-package ru.geekbrains.main.site.at.pages.page.content;
+package ru.geekbrains.main.site.at.page.content;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import ru.geekbrains.main.site.at.pages.view.ContentNavigationCourseBlock;
+import ru.geekbrains.main.site.at.view.ContentNavigationCourseBlock;
 
 public class CoursePage extends ContentBasePage {
 

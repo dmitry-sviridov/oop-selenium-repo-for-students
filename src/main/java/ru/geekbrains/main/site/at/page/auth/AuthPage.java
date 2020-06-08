@@ -1,12 +1,12 @@
-package ru.geekbrains.main.site.at.pages.page.auth;
+package ru.geekbrains.main.site.at.page.auth;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import ru.geekbrains.main.site.at.pages.OpenUrl;
-import ru.geekbrains.main.site.at.pages.page.BasePage;
-import ru.geekbrains.main.site.at.pages.page.content.HomePage;
+import ru.geekbrains.main.site.at.OpenUrl;
+import ru.geekbrains.main.site.at.page.BasePage;
+import ru.geekbrains.main.site.at.page.content.HomePage;
 
 public class AuthPage extends BasePage implements OpenUrl {
 

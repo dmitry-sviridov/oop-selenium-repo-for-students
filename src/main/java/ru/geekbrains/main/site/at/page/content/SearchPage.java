@@ -1,7 +1,7 @@
-package ru.geekbrains.main.site.at.pages.page.content;
+package ru.geekbrains.main.site.at.page.content;
 
 import org.openqa.selenium.WebDriver;
-import ru.geekbrains.main.site.at.pages.view.SearchTabsView;
+import ru.geekbrains.main.site.at.view.SearchTabsView;
 
 public class SearchPage extends ContentBasePage {
 

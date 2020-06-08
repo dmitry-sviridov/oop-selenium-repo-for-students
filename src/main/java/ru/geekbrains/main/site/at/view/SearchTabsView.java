@@ -1,11 +1,11 @@
-package ru.geekbrains.main.site.at.pages.view;
+package ru.geekbrains.main.site.at.view;
 
 import org.hamcrest.Matcher;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import ru.geekbrains.main.site.at.pages.page.BasePage;
+import ru.geekbrains.main.site.at.page.BasePage;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 

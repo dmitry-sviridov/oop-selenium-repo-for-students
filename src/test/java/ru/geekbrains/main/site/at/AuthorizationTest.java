@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 import ru.geekbrains.main.site.at.base.BaseTest;
-import ru.geekbrains.main.site.at.pages.page.auth.AuthPage;
+import ru.geekbrains.main.site.at.page.auth.AuthPage;
 
 import static ru.geekbrains.main.site.at.base.TestDataConfig.USER_NAME;
 import static ru.geekbrains.main.site.at.base.TestDataConfig.USER_PASSWORD;

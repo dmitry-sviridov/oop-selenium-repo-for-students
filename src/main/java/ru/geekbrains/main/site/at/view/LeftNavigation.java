@@ -1,15 +1,15 @@
-package ru.geekbrains.main.site.at.pages.view;
+package ru.geekbrains.main.site.at.view;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import ru.geekbrains.main.site.at.pages.framework.PageNotCreateException;
-import ru.geekbrains.main.site.at.pages.page.BasePage;
-import ru.geekbrains.main.site.at.pages.page.content.ContentBasePage;
-import ru.geekbrains.main.site.at.pages.page.content.CoursePage;
-import ru.geekbrains.main.site.at.pages.page.content.HomePage;
-import ru.geekbrains.main.site.at.pages.page.content.TestsPage;
+import ru.geekbrains.main.site.at.framework.PageNotCreateException;
+import ru.geekbrains.main.site.at.page.BasePage;
+import ru.geekbrains.main.site.at.page.content.ContentBasePage;
+import ru.geekbrains.main.site.at.page.content.CoursePage;
+import ru.geekbrains.main.site.at.page.content.HomePage;
+import ru.geekbrains.main.site.at.page.content.TestsPage;
 
 public class LeftNavigation extends BasePage {
 

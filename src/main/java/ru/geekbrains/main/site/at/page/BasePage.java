@@ -1,4 +1,4 @@
-package ru.geekbrains.main.site.at.pages.page;
+package ru.geekbrains.main.site.at.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

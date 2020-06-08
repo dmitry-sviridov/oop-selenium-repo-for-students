@@ -1,4 +1,4 @@
-package ru.geekbrains.main.site.at.pages.framework;
+package ru.geekbrains.main.site.at.framework;
 
 public class PageNotCreateException extends RuntimeException {
     public PageNotCreateException() {

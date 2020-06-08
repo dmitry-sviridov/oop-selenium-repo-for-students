@@ -1,10 +1,10 @@
-package ru.geekbrains.main.site.at.pages.view;
+package ru.geekbrains.main.site.at.view;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import ru.geekbrains.main.site.at.pages.page.BasePage;
-import ru.geekbrains.main.site.at.pages.page.content.CoursePage;
+import ru.geekbrains.main.site.at.page.BasePage;
+import ru.geekbrains.main.site.at.page.content.CoursePage;
 
 public class ContentNavigationCourseBlock extends BasePage {
 

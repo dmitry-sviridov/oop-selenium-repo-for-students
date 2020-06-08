@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 import ru.geekbrains.main.site.at.base.BaseTest;
-import ru.geekbrains.main.site.at.pages.page.content.CoursePage;
-import ru.geekbrains.main.site.at.pages.view.LeftNavigation;
+import ru.geekbrains.main.site.at.page.content.CoursePage;
+import ru.geekbrains.main.site.at.view.LeftNavigation;
 
 @Execution(ExecutionMode.CONCURRENT)
 @DisplayName("Страница Курсы")

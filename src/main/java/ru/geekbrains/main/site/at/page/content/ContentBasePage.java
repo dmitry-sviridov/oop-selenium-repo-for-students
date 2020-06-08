@@ -1,13 +1,13 @@
-package ru.geekbrains.main.site.at.pages.page.content;
+package ru.geekbrains.main.site.at.page.content;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import ru.geekbrains.main.site.at.pages.OpenUrl;
-import ru.geekbrains.main.site.at.pages.page.BasePage;
-import ru.geekbrains.main.site.at.pages.view.HeaderView;
-import ru.geekbrains.main.site.at.pages.view.LeftNavigation;
+import ru.geekbrains.main.site.at.OpenUrl;
+import ru.geekbrains.main.site.at.page.BasePage;
+import ru.geekbrains.main.site.at.view.HeaderView;
+import ru.geekbrains.main.site.at.view.LeftNavigation;
 
 public abstract class ContentBasePage extends BasePage implements OpenUrl {
 
